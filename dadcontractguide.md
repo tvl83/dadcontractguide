@@ -32,6 +32,15 @@ For EOS we will use the `depositeos11` contract. All you do is transfer EOS to t
 1. In the `Amount` field type the amount you want to transfer
 1. Click Transfer and authenticate with whichever wallet you have connected to bloks.io
 
+#### dToken Value
+For instance in my demo deposit I deposited 1.5 EOS and received 1.4819 DEOS because 1 DEOS is worth 1.021766 EOS. This value can be found in the `pricestat` table on the `depositpool1` contract. See image below.  The DEOS tokens can be transferred between accounts just like EOS. Only the holder of DEOS tokens will receive the DAD tokens as a reward.
+
+![img_1.png](img_1.png)
+1. Go to the `depositpool1` account
+1. Click the `Contract` tab
+1. Click the `pricestat` table
+1. Note the `pricedeos` column.
+
 ### Deposit DAPP
 ![img_3.png](img_3.png)
 1. Click Wallet link
@@ -96,14 +105,7 @@ cleos -u https://eos.greymass.com push transaction '{
 }'
 ```
 
-#### dToken Value
-For instance in my demo deposit I deposited 1.5 EOS and received 1.4819 DEOS because 1 DEOS is worth 1.021766 EOS. This value can be found in the `pricestat` table on the `depositpool1` contract. See image below.  The DEOS tokens can be transferred between accounts just like EOS. Only the holder of DEOS tokens will receive the DAD tokens as a reward. 
 
-![img_1.png](img_1.png)
-1. Go to the `depositpool1` account
-1. Click the `Contract` tab
-1. Click the `pricestat` table
-1. Note the `pricedeos` column.
 
 
 ### Deposit DAPP
